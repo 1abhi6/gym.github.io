@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="icon" href="Img/gym1.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhi Fitness</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        /* Desiging the logo in top-right */
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 50px;
+        }
+
+        .left a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .left img {
+            width: 80px;
+            display: block;
+            margin: auto;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 55px;
+            font-size: 25px;
+        }
+
+        /* Desiging the navbar */
+        .mid {
+            /* border: 2px solid rgb(255, 238, 0); */
+            display: block;
+            width: 36%;
+            margin: 20px auto;
+        }
+
+        .navbar {
+            display: inline-block;
+            position: sticky;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 20px 15px;
+        }
+        /* Hovering the navbar and buttoms with same style */
+        .navbar li a:hover, .btn:hover {
+            border-bottom: 2px solid gray;
+            padding-bottom: 2px;
+            color: gray;
+            border-radius: 3px;
+        }
+
+        .right {
+            /* border: 2px solid rgb(0, 17, 255); */
+            display: inline-block;
+            position: absolute;
+            top: 25px;
+            right: 30px;
+        }
+
+        /* Desiging the button */
+        .btn {
+            font-family: 'Baloo Bhai 2', cursive;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            margin: 0px 8px;
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        /* Desiging the form */
+        .container {
+            border: 2px solid whitesmoke;
+            margin: 105px 60px;
+            padding: 80px 27px;
+            width: 35%;
+            border-radius: 12px;
+        }
+
+        .form-group input {
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+            display: block;
+            width: 508px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .container button {
+            display: block;
+            width: 508px;
+            margin: 20px auto;
+            height: 58px;
+            border: 1px solid white;
+            border-radius: 8px;
+            /* transition: all 0.5s; */
+        }
+
+        #submitbtn:hover {
+            text-decoration: none;
+            border-radius: 8px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <a href="#">
+                <img src="img/gym1.png" alt="">
+                <div>Abhi Fitness</div>
+            </a>
+        </div>
+        <!-- Mid box for Navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">BMI Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Join us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Gym in Mumbai now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Phone number">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn" id="submitbtn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
